@@ -1,12 +1,10 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import { TextField, Button } from "@mui/material";
-import Map from "../components/map"
-
-
+import Map from "../components/map";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -44,7 +42,7 @@ export default function Home() {
               <Button variant="contained">Search</Button>
             </div>
             <div className="map-container">
-              <Map/>
+              <Map />
             </div>
           </div>
 
