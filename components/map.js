@@ -45,8 +45,8 @@ export default function Map() {
     // const el = ReactDom.render(<div className="marker"/>)
 
     // make a marker for each feature and add to the map
-    const marker = new mapboxgl.Marker().setLngLat(feature.geometry.coordinates);
-    marker.addTo(map);
+    const marker = new mapboxgl.Marker();
+    // marker.addTo(map);
   }
 
   useEffect(() => {
