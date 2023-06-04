@@ -42,10 +42,11 @@ export default function Map() {
   // add markers to map
   for (const feature of geojson.features) {
     // create a HTML element for each feature
-    const el = ReactDom.render(<div className="marker"/>)
+    // const el = ReactDom.render(<div className="marker"/>)
 
     // make a marker for each feature and add to the map
-    new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+    const marker = new mapboxgl.Marker().setLngLat(feature.geometry.coordinates);
+    marker.addTo(map);
   }
 
   useEffect(() => {
