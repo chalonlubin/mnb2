@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import { TextField, Button } from "@mui/material";
+import Map from "../components/map"
+
+
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -40,7 +44,7 @@ export default function Home() {
               <Button variant="contained">Search</Button>
             </div>
             <div className="map-container">
-              <p>Map with pins of books here</p>
+              <Map/>
             </div>
           </div>
 
