@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { TextField, Button } from "@mui/material";
-import Map from "../components/map";
+import Map from "../components/Map";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
               />
               <Button variant="contained">Search</Button>
             </div>
-            <div className="map-container">
+            <div>
               <Map />
             </div>
           </div>
